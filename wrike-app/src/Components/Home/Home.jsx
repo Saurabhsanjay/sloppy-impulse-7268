@@ -1,10 +1,12 @@
+import { Text } from '@chakra-ui/react'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+
+    <Text as='b' fontSize={'50px'}>
+      Home
+    </Text>
   )
 }
 

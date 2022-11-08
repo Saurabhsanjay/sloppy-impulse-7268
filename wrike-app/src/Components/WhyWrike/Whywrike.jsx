@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Whywrite = () => {
+const Whywrike = () => {
   return (
     <div>
-      
+      Whywrike
     </div>
   )
 }
 
-export default Whywrite
+export default Whywrike
