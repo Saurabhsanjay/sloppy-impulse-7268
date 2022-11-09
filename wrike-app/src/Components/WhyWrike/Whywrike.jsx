@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Whywrike = () => {
-  return (
-    <div>
-      Whywrike
-    </div>
-  )
-}
+  return <div>Whywrike</div>;
+};
 
-export default Whywrike
+export default Whywrike;

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import UpperPart from "./UpperPart";
 
 const Features = () => {
   return (
     <div>
-      Features
+      <UpperPart />
     </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;
