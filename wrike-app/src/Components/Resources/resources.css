@@ -1,0 +1,62 @@
+
+.re1{
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+ 
+}
+ 
+#a:hover{
+    background-color: #0C3245;
+    color: white;
+} 
+ 
+.C1{
+    color: teal;
+    border: 1px solid teal;
+}
+ .C1:hover{
+    background-color: teal;
+    color: white;
+ }
+ .d2{
+    text-align: left;
+    margin-left: 30px;
+ }
+ .d3{
+    text-align: left;
+ }
+
+
+ /*****************----Tab Screen *******************/
+
+ @media (max-width: 600px) {
+    .wRGrid_1 {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+    
+     
+  }
+
+ /*******************---MOBILE SCREEN-----************************/
+
+@media (max-width: 450px) {
+  .wRGrid_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .d1{
+    padding-left: 205px;
+    
+  }
+  /* .g1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+   */
+   
+  
+}
