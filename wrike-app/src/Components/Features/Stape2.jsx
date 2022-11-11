@@ -13,12 +13,12 @@ import {
 import React from "react";
 import ImageSlider from "./ImageSlider";
 import { SlideData } from "./SlideData";
-
+import "./Stack2.css";
 const Stape2 = () => {
   return (
     <div>
       <Box
-        // border="1px solid red"
+        // border="5px solid red"
         bg="rgb(234,237,245)"
         w="100%"
         p={4}
@@ -47,8 +47,8 @@ const Stape2 = () => {
           </Text>
         </Stack>
         <Stack
+          className="stack2"
           // border="1px solid red"
-
           width="80%"
           margin="auto"
           marginTop="5%"
