@@ -1,3 +1,4 @@
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -21,12 +22,31 @@ const Stape1 = () => {
         boxSize="large"
       >
         <Stack
-          spacing={8}
           // border="2px solid red"
+          spacing={8}
           textAlign="center"
           alignItems="center"
         >
-          <Text fontSize="56px" w="50%" color="white" fontWeight="bold">
+          <Button
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme="teal"
+            variant="link"
+            lineHeight="20px"
+            fontSize="20px"
+            fontWeight="600"
+            marginTop="10%"
+            marginRight="70px"
+            textAlign="center"
+          >
+            Read more
+          </Button>
+          <Text
+            className="text"
+            fontSize="56px"
+            w="50%"
+            color="white"
+            fontWeight="bold"
+          >
             Personalize Your Workspace With Custom Item Types
           </Text>
           <Text fontSize="xl" w="40%" color="white">

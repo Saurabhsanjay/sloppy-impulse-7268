@@ -36,10 +36,10 @@ const Stape3 = () => {
         </Stack>
 
         <Stack width="90%" margin="auto" marginTop="5%">
-          <Flex>
+          <Flex direction={["column", "column", "row", "row"]}>
             <Box
               // border="1px solid red"
-              width="28%"
+              width={["90vw", "90vw", "90vw", "28vw"]}
               height="300px"
               margin="auto"
               textAlign="left"
@@ -68,7 +68,7 @@ const Stape3 = () => {
             </Box>
             <Box
               // border="1px solid red"
-              width="28%"
+              width={["90vw", "90vw", "90vw", "28vw"]}
               height="300px"
               margin="auto"
               textAlign="left"
@@ -99,7 +99,7 @@ const Stape3 = () => {
 
             <Box
               // border="1px solid red"
-              width="28%"
+              width={["90vw", "90vw", "90vw", "28vw"]}
               height="300px"
               margin="auto"
               textAlign="left"

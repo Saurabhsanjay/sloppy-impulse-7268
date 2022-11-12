@@ -123,14 +123,10 @@ const Stape4 = () => {
               p={5}
               borderRadius="15px"
               bg="rgb(255,255,255)"
-              _hover={{ bg: "rgb(4,69,77)", color: "white"}}
+              _hover={{ bg: "rgb(4,69,77)", color: "white" }}
               textAlign="left"
-
             >
-              <Image
-                src="https://web-static.wrike.com/content/uploads/2020/11/rebrand-quote-slider_logo_marketing-architects.svg?av=8136a9351ccfaa40814af5713139d937"
-               
-              ></Image>
+              <Image src="https://web-static.wrike.com/content/uploads/2020/11/rebrand-quote-slider_logo_marketing-architects.svg?av=8136a9351ccfaa40814af5713139d937"></Image>
 
               <Heading
                 marginTop="10%"
