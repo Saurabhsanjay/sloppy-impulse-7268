@@ -1,11 +1,11 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Container, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, IconButton, Image, Spacer, Stack, Text, useColorMode, useDisclosure, VStack } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdDynamicFeed, MdEco, MdEditNotifications, MdFeed, MdOutlineDarkMode } from 'react-icons/md';
 import { BsLightbulb } from 'react-icons/bs';
 import { AiOutlineMenu } from 'react-icons/ai';
 //AiOutlineMenu
 import projectplanner from '../Navbar/Project.png'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 import { ImAndroid } from 'react-icons/im';
 import  '../Navbar/Navbar.module.css'
@@ -34,12 +34,18 @@ const Links = [
 ]
 
 const Navbar = () => {
-
-
+    
+const auth=localStorage.getItem("user")
+const Navigate=useNavigate()
 
     const { colorMode, toggleColorMode } = useColorMode()
     const { isOpen, onOpen, onClose } = useDisclosure()
  let isAuth=true
+
+ const logout=()=>{
+  localStorage.clear()
+  Navigate("/signup")
+ }
 
   return (
     <HStack 
@@ -81,21 +87,46 @@ const Navbar = () => {
 
            <Spacer />
 
-           {
-            !isAuth ? 
+           
             <Box display={{ base: 'none', md: 'none', lg: 'block' }} >
               <HStack>
-              <NavLink to="/login" >
-                <Button fontWeight="lighter" colorScheme="messenger" variant='outline'>
-                   Sign in
+              { auth?
+            
+                
+                <NavLink to="/signup" >
+                <Button onClick={logout} fontWeight="lighter" colorScheme="whatsapp" variant='outline'>
+                   Logout
                  </Button>
+             </NavLink>
+                :
+                <>
+                <NavLink to="/signup" >
+                <Button fontWeight="lighter" colorScheme="whatsapp" variant='outline'>
+                   Sign Up
+                 </Button>
+                 
              </NavLink> 
+             
+
+             <NavLink to="/login" >
+                <Button fontWeight="lighter" colorScheme="whatsapp" variant='outline'>
+                   Log in
+                 </Button>
+                 
+             </NavLink> 
+             </>
+            
+             }
+              
    
              <NavLink to="/login" >
-              <Button fontWeight="lighter" colorScheme="messenger" variant='solid'>
+              <Button fontWeight="lighter" colorScheme="whatsapp" variant='solid'>
                 Get Started Free
               </Button>
               </NavLink> 
+             
+
+             
 
               <IconButton
               fontSize='25px'
@@ -107,30 +138,10 @@ const Navbar = () => {
               </HStack>
        
              </Box> 
-       : <Box  display={{ base: 'none', md: 'none', lg: 'block' }} >
+      
 
-            <HStack spacing={5} >
-            <HStack  ><Text color="blackAlpha.800" fontSize="xl"><ImAndroid  /></Text> 
-            <Text fontWeight="semibold" color="blackAlpha.800">
-            {/* {userName} */}
-            </Text></HStack>
-
-             <Button
-              // onClick={LogOutUser}
-              fontWeight="lighter" colorScheme="messenger" variant='solid'>
-                   LogOut
-              </Button>
-             
-             <IconButton
-             fontSize='25px'
-             borderRadius={50}
-             
-             onClick={toggleColorMode}
-             icon={ colorMode === "light" ? <MdOutlineDarkMode /> : <BsLightbulb/>  } />
-            </HStack>
-                   
-                   </Box>
-           }
+         
+           
 
 
           <HStack display={{ base: 'block', md: 'block', lg: 'none' }}  >

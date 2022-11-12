@@ -10,10 +10,13 @@ import Resources from '../Components/Resources/Resources'
 import Whywrike from '../Components/WhyWrike/Whywrike'
 import Signup from '../Components/signuplogin/Signup'
 import PrivateRoute from '../Components/PrivateRoute/PrivateRoute'
+import Login from '../Components/signuplogin/Login'
+
 
 
 
 const AllRoutes = () => {
+    
     return (
         <div>
             <Routes>
@@ -26,6 +29,7 @@ const AllRoutes = () => {
                 </Route>
 
                 <Route path='/signup' element={<Signup />} />
+                <Route path='/login' element={<Login />} />
             </Routes>
         </div>
     )

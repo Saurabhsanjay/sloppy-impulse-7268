@@ -1,0 +1,236 @@
+.wRGrid_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+}
+.wRGrid_2 {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: auto;
+  margin-top: 40px;
+  gap: 30px;
+}
+.wRMiddle_1 {
+  margin-top: 7rem;
+  height: auto;
+  background-color: rgba(203, 243, 243, 0.568);
+}
+.video_GridItem_left {
+  width: 130%;
+}
+.video_GridItem_text_left {
+  margin-left: 10rem;
+}
+#Mid_Text {
+  margin-top: 8rem;
+}
+.video_GridItem_right {
+  width: 130%;
+  margin-left: -8rem;
+}
+.video_GridItem_text_right {
+  margin-right: 10rem;
+}
+video {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+}
+.wRdrop_down {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+}
+
+.AccordionItem {
+  border: 1px solid rgb(153, 150, 150);
+  border-radius: 10px;
+  padding: 9px;
+  margin-top: 9px;
+}
+
+.slidShow {
+  border: 1px solid red;
+  height: auto;
+}
+.wRMiddle_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(1, 39, 1);
+  color: aliceblue;
+  gap: 40px;
+}
+.wRMiddle_4 {
+  width: 87%;
+  margin: auto;
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+.wRMiddle_4 :hover {
+  background-color: rgb(10, 67, 48);
+  color: white;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.wRend_1 {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(17, 3, 40);
+  color: aliceblue;
+  gap: 40px;
+}
+.slidTwoCss {
+  width: 40%;
+  margin: auto;
+}
+.wRendBoxes {
+  width: 87%;
+  margin: auto;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+.wRendBoxes :hover {
+  background-color: rgb(10, 67, 48);
+  color: white;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.theEnd {
+  width: 100%;
+  background-image: url('https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=432,dpr=2/tp/static/assets/img/raster/white/5.png?v2');
+  background-size: 1000px;
+  background-position: right ;
+}
+.wRGrid_end_box{
+  width: 60%;
+  margin: auto;
+}
+
+/*******************---TAB SCREEN-----************************/
+
+@media (max-width: 600px) {
+  .wRGrid_1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .video_GridItem_left {
+    width: 90%;
+    margin: auto;
+  }
+  .video_GridItem_text_left {
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .video_GridItem_right {
+    width: 90%;
+    margin: auto;
+    margin-top: -4rem;
+  }
+  .video_GridItem_text_right {
+    width: 100%;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  #Mid_Text {
+    margin-top: -2rem;
+  }
+  .wRdrop_down {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wRMiddle_2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(1, 39, 1);
+    color: aliceblue;
+  }
+  .wRMiddle_4 {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+  .wRend_1 {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(17, 3, 40);
+    color: aliceblue;
+  }
+  .wRendBoxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*******************---MOBILE SCREEN-----************************/
+
+@media (max-width: 450px) {
+  .wRGrid_1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .wRGrid_1_box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wRGrid_1_box > Input,
+  Button {
+    width: 100%;
+  }
+
+  .wRGrid_2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 8px;
+  }
+  .video_GridItem_left {
+    width: 90%;
+    margin: auto;
+  }
+  .video_GridItem_text_left {
+    margin-left: 0rem;
+  }
+  .wRdrop_down {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wRdrop_down > Box {
+    width: 50%;
+  }
+  .wRMiddle_4 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+  }
+  .wRendBoxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wRGrid_end_box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wRGrid_end_box>Input,
+  Button {
+    width: 100%;
+  }
+}
