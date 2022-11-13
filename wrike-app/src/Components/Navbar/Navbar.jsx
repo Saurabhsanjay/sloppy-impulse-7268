@@ -61,7 +61,9 @@ const Navigate=useNavigate()
           <HStack >
             <Link to="/">
             <Image h={7} w=""
-             src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wrike-logo.png" /></Link>
+             src="https://cdn.iconscout.com/icon/free/png-256/wrike-226538.png" />
+             
+             </Link>
           </HStack>
 
           <Box  display={{ base: 'none', md: 'none', lg: 'block' }} >
@@ -91,13 +93,15 @@ const Navigate=useNavigate()
             <Box display={{ base: 'none', md: 'none', lg: 'block' }} >
               <HStack>
               { auth?
-            
-                
+                <>
+                <Text fontSize={'xl'} fontWeight='500' mr={3} >{JSON.parse(auth).name}</Text>
                 <NavLink to="/signup" >
+                
                 <Button onClick={logout} fontWeight="lighter" colorScheme="whatsapp" variant='outline'>
-                   Logout
+                   Logout 
                  </Button>
              </NavLink>
+             </>
                 :
                 <>
                 <NavLink to="/signup" >

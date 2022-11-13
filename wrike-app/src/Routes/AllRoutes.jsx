@@ -11,6 +11,7 @@ import Whywrike from '../Components/WhyWrike/Whywrike'
 import Signup from '../Components/signuplogin/Signup'
 import PrivateRoute from '../Components/PrivateRoute/PrivateRoute'
 import Login from '../Components/signuplogin/Login'
+import PAgeNotFound from './PAgeNotFound'
 
 
 
@@ -30,6 +31,7 @@ const AllRoutes = () => {
 
                 <Route path='/signup' element={<Signup />} />
                 <Route path='/login' element={<Login />} />
+                <Route path='*' element={<PAgeNotFound />} />
             </Routes>
         </div>
     )

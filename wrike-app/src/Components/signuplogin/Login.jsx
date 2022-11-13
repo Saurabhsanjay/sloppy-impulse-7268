@@ -13,13 +13,15 @@ import {
     useColorModeValue,
     Image,
     HStack,
+    useToast,
   } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-  
+import projectplanner from '../Navbar/Project.png'
   const  Login=()=> {
     const [email,setemail]=useState("")
     const[password,setpassword]=useState("")
+    const toast=useToast()
 const Navigate=useNavigate()
 
 useEffect(()=>{
@@ -44,7 +46,13 @@ const getLogin= async()=>{
     Navigate("/")
    }
    else{
-    alert("please Enter Correct Details")
+   
+toast({
+    title: 'please Enter Correct Details',
+    status: 'error',
+    duration: 2000,
+    position: 'top',
+    isClosable: true,})
    }
 }
 
@@ -68,8 +76,8 @@ const getLogin= async()=>{
             p={8}>
             <Stack spacing={4}>
             <HStack justifyContent='center' alignItems='center'>
-            <Image  w="200px"
-             src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wrike-logo.png" /></HStack>
+            <Image  w="150px"
+             src={projectplanner} /></HStack>
               <FormControl id="email">
                 <FormLabel>Email address</FormLabel>
                 <Input value={email} onChange={(e)=>setemail(e.target.value)} type="email" />
@@ -86,7 +94,7 @@ const getLogin= async()=>{
                   <Checkbox>Remember me</Checkbox>
                   <Link color={'blue.400'}>Forgot password?</Link>
                 </Stack>
-                <Button onClick={getLogin}
+                <Button disabled={!email || !password }  onClick={getLogin}
                   bg={'green.500'}
                   color={'white'}
                   _hover={{

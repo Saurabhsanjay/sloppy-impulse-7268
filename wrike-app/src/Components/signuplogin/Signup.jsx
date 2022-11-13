@@ -19,17 +19,17 @@ import {
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { useNavigate } from 'react-router-dom'
 
+import projectplanner from '../Navbar/Project.png'
 const Signup = () => {
     const [name, setname] = useState("")
     const [password, setpassword] = useState("")
     const [email, setemail] = useState("")
     const [showPassword, setShowPassword] = useState(false);
-    
     const auth=localStorage.getItem("user");
     const Navigate=useNavigate()
  useEffect(()=>{
    if(auth){
-     Navigate('/')
+     Navigate('/login')
    }
  },[])
  
@@ -49,7 +49,7 @@ const Signup = () => {
 
         if(result){
             localStorage.setItem("user",JSON.stringify(result))
-            Navigate("/")
+           
         }
     }
     return (
@@ -78,8 +78,8 @@ const Signup = () => {
           p={10}>
           <Stack spacing={4}>
           <HStack justifyContent='center' alignItems='center'>
-            <Image  w="200px"
-             src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wrike-logo.png" /></HStack>
+            <Image  w="140px"
+             src={projectplanner} /></HStack>
             <HStack>
            
               <Box>
@@ -111,7 +111,7 @@ const Signup = () => {
               </InputGroup>
             </FormControl>
             <Stack spacing={10} pt={2}>
-              <Button onClick={collectData}
+              <Button   disabled={!email || !password || !name} onClick={()=>{ Navigate("/login"); collectData()}}
                 loadingText="Submitting"
                 size="lg"
                 bg={'green.500'}
