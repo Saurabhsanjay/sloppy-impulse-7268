@@ -18,9 +18,7 @@ const Resources = () => {
              src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e6ebed47-7309-4d57-9073-abc383370379/ebook-25-must-know-productivity-tips.png"
              />
              <br />
-             <Text
-               className='e1'
-              fontWeight='bold'
+
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-350}
@@ -118,10 +116,7 @@ const Resources = () => {
                 color='gray'> View exclusive presentations, breakout sessions, and product announcements, all available on demand at a time that suits you. Explore the next generation in work management with Wrike.</Text>
          </GridItem>
       </Grid>
-      
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br />
-      <br /> 
+
 
       {/*----------------------------- Second section -------------------------------------------- */}
          
@@ -213,8 +208,7 @@ const Resources = () => {
                 
       </Grid>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      
+
 
       {/*  -----------------------------second second  ------------------------------*/}
       
@@ -240,6 +234,7 @@ const Resources = () => {
                 ml="1px"
                 letterSpacing='wide'
                 color='black.200'> Building Flexible Workplaces: A Definitive Guide to Hybrid Work  </Text>
+
          </GridItem>
 
 
@@ -269,6 +264,7 @@ const Resources = () => {
          </GridItem>
 
 
+
          <GridItem height='80px'>
          <Image
          borderRadius="15"
@@ -293,7 +289,7 @@ const Resources = () => {
                 </GridItem>
                 
       </Grid>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
 
        {/*  ---------------------------- Third section ------------------------------*/}
       
@@ -374,7 +370,7 @@ const Resources = () => {
                 
       </Grid>
       
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
       {/* ------------------ Fouth section------------------------ */}
 
       <Grid className="wRGrid_1" ml={10} mr={10} templateColumns='repeat(3, 1fr)' gap={6}>
@@ -461,7 +457,7 @@ const Resources = () => {
                 </GridItem>
                 
       </Grid>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
       
 
       <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6}>
@@ -542,8 +538,6 @@ const Resources = () => {
                 </GridItem>
                 
       </Grid>
-      
-     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
      {/* Button section */}
       
@@ -559,11 +553,7 @@ const Resources = () => {
 
      {/* Fouth section */}
 
-    <Box className='b1'>
-      <br />
-      <br />
-      <br />
-    <Box >
+
         <Text as="b" fontSize={{   md: '40px' }}>Work smarter with Wrike's many resources</Text>
       </Box>
       <br />
@@ -572,7 +562,7 @@ const Resources = () => {
      <Grid className="wRGrid_1" height="455px"  ml={10} mr={10}  templateColumns='repeat(4, 1fr)' gap={6} >
         <GridItem id="a" className='re1'  height='455px'>
           <br />
-          <Text  fontSize="23px" ml="-120px" as="b">Wrike Blog</Text>
+
           <Text className='d2' color='gray'>Tips stories, and new approaches 
           <br />to work management,<br />collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
           <br />
@@ -611,9 +601,6 @@ const Resources = () => {
         </GridItem>
         
      </Grid>
-    </Box>
-     
-     {/* <br /><br /><br /><br />  */}
 
 
     </>
