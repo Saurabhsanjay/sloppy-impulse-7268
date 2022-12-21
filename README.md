@@ -28,13 +28,23 @@ ____________________________________________________
 
 # Screenshot
 ## Home Page
+
 ## Signup
+![Signup wrike](https://user-images.githubusercontent.com/92791586/208907660-dafac321-d175-4cc1-88a5-13fe96c5a424.PNG)
 ## Login
+![login wrike](https://user-images.githubusercontent.com/92791586/208907864-122fccdc-0452-4f79-970e-9d0e05b3c894.PNG)
+
+
 ## Main Home Page
+![Mian home page](https://user-images.githubusercontent.com/92791586/208907900-22718d81-5b36-409d-8d8d-c17c48c6523a.PNG)
+
 ## Whywrike Page
+![whywrike page](https://user-images.githubusercontent.com/92791586/208907623-459efa9a-10e7-4aa3-af5b-ee16b5c78ed6.PNG)
 ## Features
+![features wrike](https://user-images.githubusercontent.com/92791586/208907761-4ff3884a-bb95-48e7-9272-c3bdee3a8bad.PNG)
 ## Resourse
-________________________________________
+![resources page](https://user-images.githubusercontent.com/92791586/208907706-fd6daae6-0649-4009-9cff-0c81d5d4f902.PNG)
+______________________________________
 
 ## Contributors
 
