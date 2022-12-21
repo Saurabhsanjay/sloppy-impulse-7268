@@ -5,7 +5,10 @@
     border-radius: 10px;
  
 }
+ 
+ 
 
+ 
 #a:hover{
     background-color: #0C3245;
     color: white;
@@ -15,6 +18,11 @@
     color: teal;
     border: 1px solid teal;
 }
+ 
+.C1:hover{
+    background-color: teal;
+    color: white;
+ 
 
 .C1:hover{
     background-color: teal;
@@ -74,5 +82,5 @@
  
 
    
-  
+ 
 }
