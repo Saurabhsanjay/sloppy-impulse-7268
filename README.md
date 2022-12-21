@@ -34,14 +34,15 @@ ____________________________________________________
 ## Whywrike Page
 ## Features
 ## Resourse
-
-# Team
 ________________________________________
- <a href="https://github.com/saurabhsanjay">Saurabh Ubale</a>
- <a href="https://github.com/anirbansharma1996">Anirban Sharma</a>
- <a href="https://github.com/Hirak-Debadhikary"> Hirak </a>
- <a href="https://github.com/Aarif shazZ">Arif Khan</a>         
- <a href="https://github.com/ankesh1111"> Ankesh Yadav </a>
+
+## Contributors
+
+- fw19_0509 - <a href="https://github.com/saurabhsanjay">Saurabh Ubale</a> 
+- fw20_0875 - <a href="https://github.com/anirbansharma1996">Anirban Sharma</a> 
+- fp04_462 -  <a href="https://github.com/Hirak-Debadhikary"> Hirak Debadhikary</a> 
+- fw18_0632 - <a href="https://github.com/Aarif shazZ">Arif Khan</a>       
+- fw16_654 - <a href="https://github.com/ankesh1111"> Ankesh Yadav </a><br>
 
 ## Thank you
  
