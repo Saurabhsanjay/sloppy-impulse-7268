@@ -4,7 +4,7 @@
  
  # About this project:-
  
-This was a collaborative construct week project at Masai School. Goal behind the project was to create a clone of the wrike website as close as possible to the original one with all the major functionalities of this website, such as User Authentication, Features pages, Resourse paeg , whywrike page. This project was built by a team of 5 developers in 4 Days.
+This was a collaborative construct week project at Masai School. Goal behind the project was to create a clone of the wrike website as close as possible to the original one with all the major functionalities of this website, such as User Authentication, Features page, Resourse page , whywrike page. This project was built by a team of 5 developers in 4 Days.
 
 # Deploye website link https://wrike.onrender.com/
 __________________________________________________________
