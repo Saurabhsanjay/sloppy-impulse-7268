@@ -6,7 +6,7 @@
  
 This was a collaborative construct week project at Masai School. Goal behind the project was to create a clone of the wrike website as close as possible to the original one with all the major functionalities of this website, such as User Authentication, Features pages, Resourse paeg , whywrike page. This project was built by a team of 5 developers in 4 Days.
 
-# Click Here to view the deploye website https://wrike.onrender.com/
+# Deploye website link https://wrike.onrender.com/
 __________________________________________________________
 # Tech Stack
 * React js
@@ -28,7 +28,7 @@ ____________________________________________________
 
 # Screenshot
 ## Home Page
-
+![Home wrike](https://user-images.githubusercontent.com/92791586/208908543-b64eb125-986c-4293-9b1f-3c28bb102946.PNG)
 ## Signup
 ![Signup wrike](https://user-images.githubusercontent.com/92791586/208907660-dafac321-d175-4cc1-88a5-13fe96c5a424.PNG)
 ## Login
