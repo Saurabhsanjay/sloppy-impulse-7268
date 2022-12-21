@@ -5,7 +5,7 @@
     border-radius: 10px;
  
 }
- 
+
 #a:hover{
     background-color: #0C3245;
     color: white;
@@ -15,17 +15,26 @@
     color: teal;
     border: 1px solid teal;
 }
- .C1:hover{
+
+.C1:hover{
     background-color: teal;
-    color: white;
+    color:white;
  }
- .d2{
+.d2{
     text-align: left;
     margin-left: 30px;
  }
- .d3{
+.d2:hover{
+  color: white;
+ }
+.d3{
     text-align: left;
  }
+.b1{
+  height:700px;
+  /* border: 1PX SOLID RED; */
+  background-color: #F5F2EB;
+}
 
 
  /*****************----Tab Screen *******************/
@@ -45,18 +54,25 @@
 @media (max-width: 450px) {
   .wRGrid_1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(1,1fr); */
     gap: 30px;
   }
-  .d1{
-    padding-left: 205px;
+  /* .d1{
+    padding-left: -80px;
+    font-size: 20px;
     
+  } */
+  Button{
+     margin-left: -70%;
   }
-  /* .g1{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+  #id{
+    width: 80%;
   }
-   */
+ 
+ 
+
    
   
 }
