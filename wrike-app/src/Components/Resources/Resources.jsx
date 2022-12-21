@@ -1,3 +1,4 @@
+ 
 import { Box,Text,Stack,Button, SimpleGrid ,Input, Image} from '@chakra-ui/react'
 import React from 'react'
 import resources from "../Resources/resources.css"
@@ -18,14 +19,42 @@ const Resources = () => {
              />
              <br />
              <Text fontWeight='bold'
+ 
+import { Box,Text,Stack,Button,Grid, SimpleGrid ,Input, Image, GridItem} from '@chakra-ui/react'
+import React from 'react'
+import "./resources.css"
+
+const Resources = () => {
+  return (
+    <>
+      <Text  className='d1' as="b" ml="-60%" fontSize={{ base: '24px', md: '40px', lg: '56px' }}>Resources Library</Text>
+      <br />
+      <br />{/*------------------------- First section---------------------------------------- */}
+
+      <Grid className="wRGrid_1" borderRadius="30px" templateRows={1} templateColumns='repeat(3, 1fr)' ml={10} mr={10}  gap={6}>
+         <GridItem  height='80px'>
+             <Image
+            //  height="204px"
+            //  width="100px"
+             borderRadius="15"
+             src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e6ebed47-7309-4d57-9073-abc383370379/ebook-25-must-know-productivity-tips.png"
+             />
+             <br />
+
+ 
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-350}
                 letterSpacing='wide'
                 color='gray'>EBOOKS</Text>
               
+ 
               <Text fontWeight='bold'
                 
+ 
+              <Text className='d3'
+               fontWeight='bold'
+ 
                 mt="8px"
                 fontSize='md'
                 letterSpacing='wide'
@@ -33,6 +62,10 @@ const Resources = () => {
 
 
             <Text  fontWeight='bold'
+ 
+ 
+            className='d3'
+ 
                 textTransform='uppercase'
                 fontSize='14'
                 mt="8px"
@@ -41,6 +74,7 @@ const Resources = () => {
  
 
 
+ 
          </Box>
 
 
@@ -51,35 +85,69 @@ const Resources = () => {
              />
              <br />
                <Text fontWeight='bold'
+ 
+         </GridItem>
+
+
+         <GridItem  height='80px'>
+          <Image
+             borderRadius="15"
+             src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e6ebed47-7309-4d57-9073-abc383370379/use-case-carnival.png'
+             />
+             <br />
+               <Text
+                fontWeight='bold'
+ 
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-340}
                 letterSpacing='wide'
                 color='gray'>USE CASE</Text>
-
+ 
              <Text fontWeight='bold'
                   mt="8px"
                 fontSize='md'
                   ml={-4}
+ 
+             <Text className='d3'
+             fontWeight='bold'
+                  mt="8px"
+                fontSize='md'
+                  marginLeft="1px"
+ 
                 letterSpacing='wide'
                 color='black.200'> The Use Case Carnival: Wrike Use Cases for Every Team
                 USE CASES</Text>
 
 
+ 
             <Text  fontWeight='bold'
+ 
+            <Text  
+            className='d3'
+                fontWeight='bold'
+ 
                 textTransform='uppercase'
                 fontSize='sm'
                 mt="8px"
                 letterSpacing='wide'
                 color='gray'> Wondering how you can use Wrike in your role or industry? We’ve rounded up 24 use cases that demonstrate the power of Wrike in a range of teams, from business operations to creative production.</Text>
  
+ 
          </Box>
+ 
+         </GridItem>
+ 
 
 
-
-
+ 
          <Box height='80px'>
          <Image
+ 
+         <GridItem height='80px'>
+         <Image
+         borderRadius="15"
+ 
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/7c5778b8-697b-4b30-bb3f-ce6cc2f3ced3/resources-collaborate-2x.png'
              />
               <br />
@@ -91,21 +159,32 @@ const Resources = () => {
                 color='gray'>ONLINE EVENT</Text>
                 
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 ml={-4}
+ 
+                className='d3'
+                fontSize='md'
+                ml="-1px"
+ 
                 mt="8px"
                 letterSpacing='wide'
                 color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
                 ONLINE EVENT</Text>
 
-
+ 
             <Text  fontWeight='bold'
+ 
+            <Text className='d3'
+                fontWeight='bold'
+ 
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
                 mt="8px"
                 color='gray'> View exclusive presentations, breakout sessions, and product announcements, all available on demand at a time that suits you. Explore the next generation in work management with Wrike.</Text>
+  
          </Box>
       </SimpleGrid>
       <br />
@@ -130,6 +209,16 @@ const Resources = () => {
       
 
       {/* Second section */}
+ 
+         </GridItem>
+      </Grid>
+
+
+      {/*----------------------------- Second section -------------------------------------------- */}
+         
+
+         {/* ----------------------First section------------------------------------------------- */}
+ 
 
       <Stack  ml={10} mr="720px"  >
          <Input placeholder='Search' height="60px" size='lg' />
@@ -137,8 +226,13 @@ const Resources = () => {
        <br />
        <br />
 
+ 
       <SimpleGrid ml={10} mr={10} columns={[2, 3]} spacing='20px'>
          <Box  height='80px'>
+ 
+      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6} >
+         <GridItem  height='80px'>
+ 
              <Image
              
                borderRadius="15"
@@ -154,6 +248,7 @@ const Resources = () => {
                 color='gray'>WEBINAR</Text>
               
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 letterSpacing='wide'
@@ -168,6 +263,17 @@ const Resources = () => {
 
 
          <Box   height='80px'>
+ 
+                className='d3'
+                fontSize='md'
+                ml="1px"
+                letterSpacing='wide'
+                color='black.200'> Building Flexible Workplaces: A Definitive Guide to Hybrid Work  </Text>
+         </GridItem>
+
+
+         <GridItem   height='80px'>
+ 
           <Image
              borderRadius="15"
              cursor="pointer"
@@ -182,20 +288,33 @@ const Resources = () => {
                 color='gray'>BLOGPOST</Text>
 
              <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                   ml={-4}
+ 
+                className='d3'
+                fontSize='md'
+                  ml="1px"
+ 
                 letterSpacing='wide'
                 color='black.200'> The Use Case Carnival: Wrike Use Cases for Every Team
                 USE CASES</Text>
  
  
          </Box>
+ 
+         </GridItem>
+ 
 
 
 
 
+ 
          <Box height='80px'>
+ 
+         <GridItem height='80px'>
+ 
          <Image
          borderRadius="15"
          cursor="pointer"
@@ -210,6 +329,7 @@ const Resources = () => {
                 color='gray'>BLOGPOST</Text>
                 
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 ml={-4}
@@ -234,6 +354,24 @@ const Resources = () => {
       
       <SimpleGrid ml={10} mr={10} columns={[2, 3]} spacing='20px'>
          <Box  height='80px'>
+ 
+                 className='d3'
+                fontSize='md'
+                ml="3px"
+                letterSpacing='wide'
+                color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
+                ONLINE EVENT</Text>
+                </GridItem>
+                
+      </Grid>
+
+
+
+      {/*  -----------------------------second second  ------------------------------*/}
+      
+      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6}>
+         <GridItem  height='80px'>
+ 
              <Image
               cursor="pointer"
              
@@ -249,6 +387,7 @@ const Resources = () => {
                 color='gray'>BLOGPOST</Text>
               
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 letterSpacing='wide'
@@ -263,6 +402,18 @@ const Resources = () => {
 
 
          <Box   height='80px'>
+ 
+                className='d3'
+                fontSize='md'
+                ml="1px"
+                letterSpacing='wide'
+                color='black.200'> Building Flexible Workplaces: A Definitive Guide to Hybrid Work  </Text>
+
+         </GridItem>
+
+
+         <GridItem  height='80px'>
+ 
           <Image
              borderRadius="15"
              cursor="pointer"
@@ -277,12 +428,19 @@ const Resources = () => {
                 color='gray'>BLOGPOST</Text>
 
              <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                   ml={-4}
+ 
+                 className='d3'
+                fontSize='md'
+                  ml="2px"
+ 
                 letterSpacing='wide'
                 color='black.200'> The Use Case Carnival: Wrike Use Cases for Every Team
                 USE CASES</Text>
+ 
  
  
          </Box>
@@ -291,6 +449,13 @@ const Resources = () => {
 
 
          <Box height='80px'>
+ 
+         </GridItem>
+
+
+
+         <GridItem height='80px'>
+ 
          <Image
          borderRadius="15"
          cursor="pointer"
@@ -305,6 +470,7 @@ const Resources = () => {
                 color='gray'>BLOGPOST</Text>
                 
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 ml={-4}
@@ -329,6 +495,22 @@ const Resources = () => {
       
       <SimpleGrid ml={10} mr={10} columns={[2, 3]} spacing='20px'>
          <Box  height='80px'>
+         className='d3'
+                fontSize='md'
+                ml="3px"
+                letterSpacing='wide'
+                color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
+                ONLINE EVENT</Text>
+                </GridItem>
+                
+      </Grid>
+
+
+       {/*  ---------------------------- Third section ------------------------------*/}
+      
+      <Grid className="wRGrid_1" ml={10} mr={10} templateColumns='repeat(3, 1fr)' gap={6}>
+         <GridItem height='80px'>
+ 
              <Image
              
                borderRadius="15"
@@ -344,6 +526,7 @@ const Resources = () => {
                 color='gray'>WEBINAR</Text>
               
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 letterSpacing='wide'
@@ -358,6 +541,16 @@ const Resources = () => {
 
 
          <Box   height='80px'>
+ 
+                className='d3'
+                fontSize='md'
+                letterSpacing='wide'
+                color='black.200'> Building Flexible Workplaces: A Definitive Guide to Hybrid Work  </Text>
+          </GridItem>
+
+
+         <GridItem height='80px'>
+ 
           <Image
              borderRadius="15"
              cursor="pointer"
@@ -372,20 +565,34 @@ const Resources = () => {
                 color='gray'>MEDIA</Text>
 
              <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                   ml={-4}
+ 
+                className='d3'
+                fontSize='md'
+                  // ml={-4}
+ 
                 letterSpacing='wide'
                 color='black.200'> The Use Case Carnival: Wrike Use Cases for Every Team
                 USE CASES</Text>
  
  
+ 
          </Box>
+ 
+         </GridItem>
+ 
 
 
 
 
+ 
          <Box height='80px'>
+ 
+         <GridItem height='80px'>
+ 
          <Image
          borderRadius="15"
          cursor="pointer"
@@ -400,6 +607,7 @@ const Resources = () => {
                 color='gray'>REPORT</Text>
                 
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
                 ml={-4}
@@ -424,6 +632,23 @@ const Resources = () => {
 
       <SimpleGrid ml={10} mr={10} columns={[2, 3]} spacing='20px'>
          <Box  height='80px'>
+ 
+                className='d3'
+                fontSize='md'
+                // ml={-4}
+                letterSpacing='wide'
+                color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
+                ONLINE EVENT</Text>
+                </GridItem>
+                
+      </Grid>
+      
+
+      {/* ------------------ Fouth section------------------------ */}
+
+      <Grid className="wRGrid_1" ml={10} mr={10} templateColumns='repeat(3, 1fr)' gap={6}>
+         <GridItem  height='80px'>
+ 
              <Image
              
                borderRadius="15"
@@ -450,10 +675,17 @@ const Resources = () => {
  
 
 
+ 
          </Box>
 
 
          <Box   height='80px'>
+ 
+         </GridItem>
+
+
+         <GridItem   height='80px'>
+ 
           <Image
              borderRadius="15"
              cursor="pointer"
@@ -468,20 +700,33 @@ const Resources = () => {
                 color='gray'>MEDIA</Text>
 
              <Text fontWeight='bold'
+
                 
                 fontSize='md'
                   ml={-4}
+ 
+                className='d3'
+                fontSize='md'
+                  // ml={-4}
+ 
                 letterSpacing='wide'
                 color='black.200'> The Use Case Carnival: Wrike Use Cases for Every Team
                 USE CASES</Text>
  
- 
+  
          </Box>
+ 
+         </GridItem>
+ 
+
 
 
 
 
          <Box height='80px'>
+ 
+         <GridItem height='80px'>
+ 
          <Image
          borderRadius="15"
          cursor="pointer"
@@ -496,12 +741,19 @@ const Resources = () => {
                 color='gray'>SUCCESS KIT</Text>
                 
               <Text fontWeight='bold'
+ 
                 
                 fontSize='md'
+ 
+                className='d3'
+                fontSize='md'
+                ml="7px"
+ 
                 // ml={-}
                 letterSpacing='wide'
                 color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
                 ONLINE EVENT</Text>
+ 
                 </Box>
                 
       </SimpleGrid>
@@ -520,6 +772,16 @@ const Resources = () => {
 
       <SimpleGrid ml={10} mr={10} fontSize={['sm', 'md', 'lg', 'xl']} columns={[2, 3]} spacing='20px'>
          <Box  height='80px'>
+ 
+                </GridItem>
+                
+      </Grid>
+
+      
+
+      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6}>
+         <GridItem  height='80px'>
+ 
              <Image
               cursor="pointer"
                borderRadius="15"
@@ -541,6 +803,7 @@ const Resources = () => {
                 color='black.200'>  Hires Focused On Customer Growth, New Markets
                 </Text>
 
+ 
 
            
  
@@ -550,6 +813,12 @@ const Resources = () => {
 
 
          <Box   height='80px'>
+ 
+          </GridItem>
+
+
+         <GridItem height='80px'>
+ 
           <Image
              borderRadius="15"
              cursor="pointer"
@@ -563,21 +832,34 @@ const Resources = () => {
                 letterSpacing='wide'
                 color='gray'> MEDIA</Text>
 
+ 
 <Text fontWeight='bold'
                 
                 fontSize='md'
-              
+ 
+              <Text fontWeight='bold'
+                className='d3'
+                fontSize='md'
+               ml="4px"
+ 
                 letterSpacing='wide'
                 color='black.200'>  Collaborate 2022 On-demand: The Ultimate Work Management Event
                 ONLINE EVENT</Text>
  
  
+ 
          </Box>
+ 
+         </GridItem>
+ 
 
 
 
-
+ 
          <Box height='80px'>
+ 
+         <GridItem height='80px'>
+ 
          <Image
          borderRadius="15"
          cursor="pointer"
@@ -592,7 +874,7 @@ const Resources = () => {
                 color='gray'>MEDIA</Text>
                 
                 <Text fontWeight='bold'
-                
+ 
                 fontSize='md'
                
                 letterSpacing='wide'
@@ -618,6 +900,18 @@ const Resources = () => {
       <br />
       <br />
       
+ 
+                ml="4px"
+                fontSize='md'
+               className='d3'
+                letterSpacing='wide'
+                color='black.200'>  Hires Focused On Customer Growth, New Markets
+                ONLINE EVENT</Text>
+                </GridItem>
+                
+      </Grid>
+
+ 
      {/* Button section */}
       
      <Button  className='C1' fontSize="20px" width="200px" height="60px" colorScheme='teal' variant='outline'>
@@ -633,51 +927,86 @@ const Resources = () => {
      {/* Fouth section */}
 
 
+ 
       <Box  colorScheme='gray'>
+ 
         <Text as="b" fontSize={{   md: '40px' }}>Work smarter with Wrike's many resources</Text>
       </Box>
       <br />
       <br />
 
+ 
      <SimpleGrid height="455px"  ml={10} mr={10} columns={4} spacing="20px" >
         <Box id="1" className='re1'  height='455px'>
           <br />
           <Text fontSize="23px" ml="-120px" as="b">Wrike Blog</Text>
           <Text   color='gray'>Tips stories, and new approaches 
+ 
+     <Grid className="wRGrid_1" height="455px"  ml={10} mr={10}  templateColumns='repeat(4, 1fr)' gap={6} >
+        <GridItem id="a" className='re1'  height='455px'>
+          <br />
+
+          <Text className='d2' color='gray'>Tips stories, and new approaches 
+ 
           <br />to work management,<br />collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
           <br />
           <br />
           <br />
           <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-6.png'/>
+ 
         </Box>
         <Box className='re1'  height='455px'>
           <br />
         <Text fontSize="23px" ml="-30px" as="b">Educational Guides</Text>
           <Text   color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
+        </GridItem>
+        <GridItem id="a" className='re1'  height='455px'>
+          <br />
+        <Text fontSize="23px" ml="-30px" as="b">Educational Guides</Text>
+          <Text  className='d2' color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
          <br />
          <br />
          <br />
           <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-4.png'/>
+ 
         </Box>
         <Box className='re1'  height='455px'>
           <br/>
         <Text fontSize="23px" ml="-140px" as="b">Webinars</Text>
           <Text   color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
+        </GridItem>
+        <GridItem id="a" className='re1'  height='455px'>
+          <br/>
+        <Text fontSize="23px" ml="-140px" as="b">Webinars</Text>
+          <Text className='d2'  color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
           <br />
           <br/>
           <br/>
           
 
           <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards.png'/>
+ 
         </Box>
         <Box  className='re1'   height='455px'>
           <br/>
         <Text fontSize="23px" ml="-40px" as="b">Computer Success</Text>
           <Text   color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
+        </GridItem>
+        <GridItem id="a" className='re1'   height='455px'>
+          <br/>
+        <Text fontSize="23px" ml="-40px" as="b">Computer Success</Text>
+          <Text className='d2'   color='gray'>Tips stories, and new approaches <br /> to work management, <br /> collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
+ 
           <br />
           <br />
           <br/>
           <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-3.png'/>
+ 
         </Box>
         
      </SimpleGrid>
@@ -685,6 +1014,14 @@ const Resources = () => {
 
 
     </Box>
+ 
+        </GridItem>
+        
+     </Grid>
+
+
+    </>
+ 
   )
 }
 
