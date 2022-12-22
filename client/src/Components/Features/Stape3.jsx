@@ -12,27 +12,27 @@ import React from "react";
 const Stape3 = () => {
   return (
     <div>
-      <Box bg="rgb(255,255,255)">
+      <Box bg="rgb(255,255,255)" w="100%" p={2}>
         <Stack
+          // border="1px solid red"
+          maxW="55rem"
+          margin="auto"
           spacing={8}
-          // border="2px solid red"
           textAlign="center"
           alignItems="center"
         >
-          <Text
-            fontSize="56px"
-            w="60%"
-            color="black"
-            fontWeight="bold"
-            marginTop="5%"
-          >
+          <Heading mb={4} color="black" fontWeight="bold" marginTop="5%">
+            {" "}
             Experience the power of truly customizable software
-          </Text>
-          <Text fontSize="xl" w="55%" color="black">
+          </Heading>
+          <Text fontSize="xl" color="black">
             Whether you’re a marketer or an IT developer, Wrike’s custom item
             types feature will work for your team. Here’s a taster of the
             benefits it can bring.
           </Text>
+          <Button size="lg" colorScheme="green" mt="24px">
+            Get Started
+          </Button>
         </Stack>
 
         <Stack width="90%" margin="auto" marginTop="5%">
@@ -129,10 +129,9 @@ const Stape3 = () => {
           </Flex>
         </Stack>
         <Button
+          size="lg"
           colorScheme="green"
-          fontSize="2xl"
-          width="15%"
-          height="60px"
+          mt="24px"
           marginBottom="5%"
           marginTop="5%"
         >

@@ -1,10 +1,10 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { ArrowBackIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
-  Grid,
-  GridItem,
+  Heading,
   Image,
+  SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -14,46 +14,40 @@ const Stape1 = () => {
   return (
     <div>
       <Box
+     
         // border="1px solid red"
         bg="rgb(23,31,56)"
         w="100%"
-        p={4}
+        p={2}
         height="800px"
         boxSize="large"
       >
         <Stack
-          // border="2px solid red"
+          maxW="55rem"
+          margin="auto"
           spacing={8}
           textAlign="center"
           alignItems="center"
         >
           <Button
-            rightIcon={<ArrowForwardIcon />}
-            colorScheme="teal"
+            leftIcon={<ArrowBackIcon />}
             variant="link"
-            lineHeight="20px"
-            fontSize="20px"
-            fontWeight="600"
-            marginTop="10%"
-            marginRight="70px"
-            textAlign="center"
+            color="greenyellow"
+            size="md"
+            mt="24px"
           >
-            Read more
+            All features
           </Button>
-          <Text
-            className="text"
-            fontSize="56px"
-            w="50%"
-            color="white"
-            fontWeight="bold"
-          >
+
+          <Heading mb={4} color="white" fontWeight="bold">
+            {" "}
             Personalize Your Workspace With Custom Item Types
-          </Text>
-          <Text fontSize="xl" w="40%" color="white">
+          </Heading>
+          <Text fontSize="xl" color="white">
             Build a customizable library in your Wrike workspace and mirror the
             unique processes of your team, department, or company.
           </Text>
-          <Button colorScheme="green" fontSize="2xl" width="15%" height="60px">
+          <Button size="lg" colorScheme="green" mt="24px">
             Get Started
           </Button>
         </Stack>
@@ -84,31 +78,44 @@ const Stape1 = () => {
           >
             TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE
           </Text>
-          <Grid templateColumns="repeat(7, 1fr)" bg="rgb(23,31,56)">
-            <GridItem w="100%" h="20" marginLeft="10%">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-white-google.svg" />
-            </GridItem>
-
-            <GridItem w="100%" h="20" marginLeft="10%">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos-white.svg" />
-            </GridItem>
-
-            <GridItem w="100%" h="20" marginLeft="10%">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-lyft-white.svg" />
-            </GridItem>
-            <GridItem w="100%" h="20">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-white-siemens.svg" />
-            </GridItem>
-            <GridItem w="100%" h="20">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon-white.svg" />
-            </GridItem>
-            <GridItem w="100%" h="20" marginLeft="12%">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-white-oglivy.svg" />
-            </GridItem>
-            <GridItem w="100%" h="20">
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-snowflake-white.svg" />
-            </GridItem>
-          </Grid>
+          <SimpleGrid minChildWidth="100px" spacing="20px">
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-white-google.svg"
+              />
+            </Box>
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos-white.svg"
+              />
+            </Box>
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-white-siemens.svg"
+              />
+            </Box>
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon-white.svg"
+              />
+            </Box>
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-white-oglivy.svg"
+              />
+            </Box>
+            <Box height="100px">
+              <Image
+                width="100%"
+                src="https://web-static.wrike.com/tp/storage/uploads/5ce76ec8-86e1-42ce-9a8e-acafa4cdd82e/1440-logoroll-logo-snowflake-white.svg"
+              />
+            </Box>
+          </SimpleGrid>
         </Stack>
       </Box>
     </div>
