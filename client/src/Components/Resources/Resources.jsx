@@ -1,22 +1,27 @@
 import { Box,Text,Stack,Button,Grid, SimpleGrid ,Input, Image, GridItem} from '@chakra-ui/react'
 import React from 'react'
 import "./resources.css"
+import ImageSlider from '../Resources/ImageSlider'
+
+ 
 
 const Resources = () => {
+
   return (
     <>
-      <Text  className='d1' as="b" ml="-60%" fontSize={{ base: '24px', md: '40px', lg: '56px' }}>Resources Library</Text>
+     
+ <Box marginLeft="-77px" marginTop="20px"><Text   as="b" ml="-65%" fontSize="33px">Resources Library</Text> </Box>
       <br />
       <br />{/*------------------------- First section---------------------------------------- */}
 
-      <Grid className="wRGrid_1" borderRadius="30px" templateRows={1} templateColumns='repeat(3, 1fr)' ml={10} mr={10}  gap={6}>
-         <GridItem  height='80px'>
-             <Image
-            //  height="204px"
-            //  width="100px"
+      <Grid    marginTop="-1px"  className="Grid_1" borderRadius="30px">
+         <GridItem margin={"auto"} height='80px'>
+          <Box> 
+            <Image 
              borderRadius="15"
              src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e6ebed47-7309-4d57-9073-abc383370379/ebook-25-must-know-productivity-tips.png"
              />
+             
              <br />
              <Text
                className='e1'
@@ -42,14 +47,16 @@ const Resources = () => {
                 mt="8px"
                 letterSpacing='wide'
                 color='gray'>Enable a flexible workforce with our eBook guide to navigating hybrid work. Learn about the benefits and challenges of hybrid work, as well as tips and tricks for creating your own hybrid work model.</Text>
- 
 
 
-         </GridItem>
+             </Box>
+            
+          </GridItem>
 
 
-         <GridItem  height='80px'>
-          <Image
+         <GridItem margin={"auto"} height='80px'>
+           <Box>
+           <Image
              borderRadius="15"
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e6ebed47-7309-4d57-9073-abc383370379/use-case-carnival.png'
              />
@@ -80,15 +87,15 @@ const Resources = () => {
                 mt="8px"
                 letterSpacing='wide'
                 color='gray'> Wondering how you can use Wrike in your role or industry? We’ve rounded up 24 use cases that demonstrate the power of Wrike in a range of teams, from business operations to creative production.</Text>
+           </Box>
+        
  
          </GridItem>
 
-
-
-
          <GridItem height='80px'>
-         <Image
-         borderRadius="15"
+          <Box>
+          <Image
+             borderRadius="15"
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/7c5778b8-697b-4b30-bb3f-ce6cc2f3ced3/resources-collaborate-2x.png'
              />
               <br />
@@ -116,7 +123,9 @@ const Resources = () => {
                 letterSpacing='wide'
                 mt="8px"
                 color='gray'> View exclusive presentations, breakout sessions, and product announcements, all available on demand at a time that suits you. Explore the next generation in work management with Wrike.</Text>
-         </GridItem>
+            </Box>
+         
+          </GridItem>
       </Grid>
       
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -129,13 +138,15 @@ const Resources = () => {
          {/* ----------------------First section------------------------------------------------- */}
 
 
-      <Stack  ml={10} mr="720px"  >
+      <Box id="p1" marginTop="-50px"  ml={10} mr="750px"  >
          <Input placeholder='Search' height="60px" size='lg' />
-      </Stack>
+      </Box>
        <br />
        <br />
 
-      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6} >
+       {/*  SECOND GRID */}
+
+      <Grid className="Grid_2" >
          <GridItem  height='80px'>
              <Image
              
@@ -218,7 +229,7 @@ const Resources = () => {
 
       {/*  -----------------------------second second  ------------------------------*/}
       
-      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6}>
+      <Grid className="Grid_3">
          <GridItem  height='80px'>
              <Image
               cursor="pointer"
@@ -297,7 +308,7 @@ const Resources = () => {
 
        {/*  ---------------------------- Third section ------------------------------*/}
       
-      <Grid className="wRGrid_1" ml={10} mr={10} templateColumns='repeat(3, 1fr)' gap={6}>
+      <Grid className="Grid_4" >
          <GridItem height='80px'>
              <Image
              
@@ -377,7 +388,7 @@ const Resources = () => {
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       {/* ------------------ Fouth section------------------------ */}
 
-      <Grid className="wRGrid_1" ml={10} mr={10} templateColumns='repeat(3, 1fr)' gap={6}>
+      <Grid className="Grid_5">
          <GridItem  height='80px'>
              <Image
              
@@ -464,7 +475,7 @@ const Resources = () => {
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       
 
-      <Grid className="wRGrid_1" ml={10} mr={10}  templateColumns='repeat(3, 1fr)' gap={6}>
+      <Grid className="Grid_6">
          <GridItem  height='80px'>
              <Image
               cursor="pointer"
@@ -569,8 +580,11 @@ const Resources = () => {
       <br />
       <br />
 
-     <Grid className="wRGrid_1" height="455px"  ml={10} mr={10}  templateColumns='repeat(4, 1fr)' gap={6} >
+
+      {/* <ImageSlider> */}
+     <Grid className="Grid_7" height="455px">
         <GridItem id="a" className='re1'  height='455px'>
+         
           <br />
           <Text  fontSize="23px" ml="-120px" as="b">Wrike Blog</Text>
           <Text className='d2' color='gray'>Tips stories, and new approaches 
@@ -578,7 +592,7 @@ const Resources = () => {
           <br />
           <br />
           <br />
-          <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-6.png'/>
+          <Image marginTop="-4px" src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-6.png'/>
         </GridItem>
         <GridItem id="a" className='re1'  height='455px'>
           <br />
@@ -587,7 +601,7 @@ const Resources = () => {
          <br />
          <br />
          <br />
-          <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-4.png'/>
+          <Image marginTop="-4px" src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-4.png'/>
         </GridItem>
         <GridItem id="a" className='re1'  height='455px'>
           <br/>
@@ -598,7 +612,7 @@ const Resources = () => {
           <br/>
           
 
-          <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards.png'/>
+          <Image marginTop="-4px" src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards.png'/>
         </GridItem>
         <GridItem id="a" className='re1'   height='455px'>
           <br/>
@@ -607,10 +621,11 @@ const Resources = () => {
           <br />
           <br />
           <br/>
-          <Image src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-3.png'/>
+          <Image marginTop="-4px" src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-3.png'/>
         </GridItem>
         
      </Grid>
+     {/* </ImageSlider> */}
     </Box>
      
      {/* <br /><br /><br /><br />  */}
