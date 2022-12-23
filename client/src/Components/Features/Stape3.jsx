@@ -35,12 +35,22 @@ const Stape3 = () => {
           </Button>
         </Stack>
 
-        <Stack width="90%" margin="auto" marginTop="5%">
-          <Flex direction={["column", "column", "row", "row"]}>
+        <Stack
+          width="100%"
+          margin="auto"
+          marginTop="5%"
+          // border="1px solid black"
+          p={1}
+          
+        >
+          <Flex gap="10px" direction={["column", "column", "row", "row"]}
+          // direction={{ base: "90%", sm: "90%", md: "30%", lg: "30%" }}
+          >
             <Box
               // border="1px solid red"
-              width={["90vw", "90vw", "90vw", "28vw"]}
-              height="300px"
+              // width={["90vw", "90vw", "90vw", "28vw"]}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              
               margin="auto"
               textAlign="left"
             >
@@ -68,8 +78,9 @@ const Stape3 = () => {
             </Box>
             <Box
               // border="1px solid red"
-              width={["90vw", "90vw", "90vw", "28vw"]}
-              height="300px"
+              // width={["90vw", "90vw", "90vw", "28vw"]}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              
               margin="auto"
               textAlign="left"
             >
@@ -99,8 +110,9 @@ const Stape3 = () => {
 
             <Box
               // border="1px solid red"
-              width={["90vw", "90vw", "90vw", "28vw"]}
-              height="300px"
+              // width={["90vw", "90vw", "90vw", "28vw"]}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              
               margin="auto"
               textAlign="left"
             >
