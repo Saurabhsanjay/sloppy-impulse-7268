@@ -14,7 +14,6 @@ const Stape1 = () => {
   return (
     <div>
       <Box
-     
         // border="1px solid red"
         bg="rgb(23,31,56)"
         w="100%"

@@ -14,28 +14,29 @@ const Stape4 = () => {
   return (
     <div>
       <Box bg="rgb(234,237,245)">
-        <Stack width="90%" margin="auto">
+        <Stack width="90%" margin="auto" p={1}>
           <Heading
-            fontSize="44px"
-            lineHeight="60px"
-            fontWeight="700"
-            textAlign="center"
+            mb={4}
+            color="black"
+            fontWeight="bold"
             marginTop="5%"
             marginBottom="5%"
           >
+            {" "}
             Customer success stories
           </Heading>
-          <Flex>
+          <Flex gap="10px" direction={["column", "column", "row", "row"]}>
             <Box
               // border="1px solid red"
-              width="28%"
-              height="300px"
+              // width="28%"
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              // height="300px"
               margin="auto"
               p={5}
               borderRadius="15px"
               bg="rgb(255,255,255)"
               _hover={{ bg: "rgb(4,69,77)", color: "white" }}
-              textAlign="left"
+              textAlign="start"
             >
               <Image src="https://web-static.wrike.com/content/uploads/2020/11/rebrand-quote-slider_logo_money-tree.svg?av=dd49fe45ad60ad72b55445c258d7c46c"></Image>
 
@@ -62,10 +63,10 @@ const Stape4 = () => {
                 colorScheme="teal"
                 variant="link"
                 lineHeight="20px"
-                fontSize="20px"
+                fontSize="1rem"
                 fontWeight="600"
                 marginTop="10%"
-                marginRight="200px"
+                // marginRight="200px"
               >
                 Moneytree's story
               </Button>
@@ -73,14 +74,14 @@ const Stape4 = () => {
 
             <Box
               // border="1px solid red"
-              width="28%"
-              height="300px"
+
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              textAlign="start"
               margin="auto"
               p={5}
               borderRadius="15px"
               bg="rgb(255,255,255)"
               _hover={{ bg: "rgb(4,69,77)", color: "white" }}
-              textAlign="left"
             >
               <Image src="https://web-static.wrike.com/content/uploads/2021/01/rebrand-quote_logo_fitbit.svg?av=525f74914e6eaa769ec4baf4ff45411a"></Image>
 
@@ -107,24 +108,22 @@ const Stape4 = () => {
                 colorScheme="teal"
                 variant="link"
                 lineHeight="20px"
-                fontSize="20px"
+                fontSize="1rem"
                 fontWeight="600"
                 marginTop="10%"
-                marginRight="200px"
               >
                 Fitbit's story
               </Button>
             </Box>
 
             <Box
-              width="28%"
-              height="300px"
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
               margin="auto"
               p={5}
               borderRadius="15px"
               bg="rgb(255,255,255)"
               _hover={{ bg: "rgb(4,69,77)", color: "white" }}
-              textAlign="left"
+              textAlign="start"
             >
               <Image src="https://web-static.wrike.com/content/uploads/2020/11/rebrand-quote-slider_logo_marketing-architects.svg?av=8136a9351ccfaa40814af5713139d937"></Image>
 
@@ -151,10 +150,9 @@ const Stape4 = () => {
                 colorScheme="teal"
                 variant="link"
                 lineHeight="20px"
-                fontSize="20px"
+                fontSize="1rem"
                 fontWeight="600"
                 marginTop="10%"
-                marginRight="70px"
               >
                 Marketing Architects' story
               </Button>
@@ -163,53 +161,69 @@ const Stape4 = () => {
         </Stack>
         <Box
           border="3px solid green"
-          width="80%"
-          height="350px"
+          width={{ base: "90%", sm: "90%", md: "80%", lg: "80%" }}
           margin="auto"
           marginTop="5%"
           borderRadius="10px"
         >
           <Stack
+            maxW="60rem"
             // border="1px solid red"
-            width="80%"
+            width={{ base: "90%", sm: "90%", md: "80%", lg: "80%" }}
             margin="auto"
-            marginTop="5%"
+            marginTop="2%"
+            textAlign="center"
           >
-            <Text
-              fontSize="32px"
-              lineHeight="52px"
+            <Heading
+              mb={4}
+              fontSize="25px"
+              lineHeight="2rem"
               fontWeight="400"
               verticalAlign="baseline"
-              textAlign="left"
+              textAlign="justify-all"
+              // alignItem="start"
             >
-              "I've never seen a tool as easy to use, as easy to onboard new
-              users, as easy to scale, and as easy to customize to your own
+              {" "}
+              I've never seen a tool as easy to use, as easy to onboard new
+              userS, as easy to scale, and as easy to customize to your own
               workflow, process, team, clientele, and changing environment."
-            </Text>
+              {/* "The way I'm able to customize Wrike to fit my workflow is one of
+              the strongest features." */}
+            </Heading>
           </Stack>
-          <Stack width="80%" margin="auto" marginTop="2%">
-            <Flex gap="15%">
+          <Stack
+            width={{ base: "90%", sm: "90%", md: "80%", lg: "80%" }}
+            margin="auto"
+            marginTop="1rem"
+          >
+            <Flex gap="15%" direction={["column", "column", "row", "row"]}>
               <Text
                 // border="1px solid red"
-                fontSize="18px"
+                fontSize="20px"
                 lineHeight="32px"
-                margin="19px 0px"
                 fontWeight="400"
-
-                // textAlign="left"
               >
-                Cheryl Venable, Senior Manager of Operations, Creative Center,
-                Sony Pictures Television
+                Paul De Leon, Graphic Designer, San Francisco Chronicle
               </Text>
-              <Image src="https://web-static.wrike.com/tp/storage/uploads/a570bb8c-fe99-4f8c-809c-8399431bf855/rebrand-quote-logo-sony-120x70.svg"></Image>
+              <Image
+                // border="1px solid red"
+                width={{ base: "90%", sm: "90%", md: "20%", lg: "15%" }}
+                margin="auto"
+                display={{
+                  base: "block",
+                  sm: "none",
+                  md: "block",
+                  lg: "block",
+                }}
+                src="https://web-static.wrike.com/tp/storage/uploads/a570bb8c-fe99-4f8c-809c-8399431bf855/rebrand-quote-logo-sony-120x70.svg"
+              ></Image>
             </Flex>
           </Stack>
         </Box>
         <Button
+          size="lg"
           colorScheme="green"
-          fontSize="2xl"
-          width="15%"
-          height="60px"
+          mt="24px"
           marginBottom="5%"
           marginTop="5%"
         >
