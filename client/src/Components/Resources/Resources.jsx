@@ -10,7 +10,7 @@ const Resources = () => {
   return (
     <>
      
- <Box marginLeft="-77px" marginTop="20px"><Text   as="b" ml="-65%" fontSize="33px">Resources Library</Text> </Box>
+ <Box marginTop="20px"><Text id="e1"   as="b" ml="-67%"   fontSize={{ base: '26px', md: '40px', lg: '45px' }}>Resources Library</Text> </Box>
       <br />
       <br />{/*------------------------- First section---------------------------------------- */}
 
@@ -24,8 +24,9 @@ const Resources = () => {
              
              <br />
              <Text
+             id='e2'
                className='e1'
-              fontWeight='bold'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-350}
@@ -62,6 +63,7 @@ const Resources = () => {
              />
              <br />
                <Text
+                 id='e3'
                 fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
@@ -99,7 +101,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/7c5778b8-697b-4b30-bb3f-ce6cc2f3ced3/resources-collaborate-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text 
+                id='e4'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -138,8 +142,8 @@ const Resources = () => {
          {/* ----------------------First section------------------------------------------------- */}
 
 
-      <Box id="p1" marginTop="-50px"  ml={10} mr="750px"  >
-         <Input placeholder='Search' height="60px" size='lg' />
+      <Box  marginTop="-50px"  ml={10} mr="750px"  >
+         <Input id='f2' placeholder='Search' height="60px" size='lg' />
       </Box>
        <br />
        <br />
@@ -155,7 +159,9 @@ const Resources = () => {
              src= " https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/2c3be91d-f038-4445-bdd5-a938ef8aae07/resources-webinars-recycle-dark-matter-into-productivity-2x.png"
              />
              <br />
-             <Text fontWeight='bold'
+             <Text 
+             id='e6'
+             fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-336}
@@ -178,7 +184,9 @@ const Resources = () => {
              src=' https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/2c3be91d-f038-4445-bdd5-a938ef8aae07/resources-blog-resources-for-professional-services-teams-2x.png'
              />
              <br />
-               <Text fontWeight='bold'
+               <Text 
+                  id='e7'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-330}
@@ -206,7 +214,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/2c3be91d-f038-4445-bdd5-a938ef8aae07/resources-blog-pmo-halloween-planning-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text
+                 id='e7'
+                fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -238,7 +248,9 @@ const Resources = () => {
              src= " https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/916da484-56ca-47cd-b711-08529a0e6801/resources-wrike-under-vista-2x.png"
              />
              <br />
-             <Text fontWeight='bold'
+             <Text
+               id='e7'
+              fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-330}
@@ -261,7 +273,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/916da484-56ca-47cd-b711-08529a0e6801/resources-up-level-your-work-management-2x.png'
              />
              <br />
-               <Text fontWeight='bold'
+               <Text 
+               id='e7'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-330}
@@ -287,7 +301,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/916da484-56ca-47cd-b711-08529a0e6801/resources-13-resources-to-help-pm-teams-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text 
+               id='e7'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -317,7 +333,9 @@ const Resources = () => {
              src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/7bfbddba-15c8-4063-bc05-f3f7dc929a4c/cover-how-wrike-speaks-your-teams-language-2x.png"
              />
              <br />
-             <Text fontWeight='bold'
+             <Text
+                id='e6'
+              fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-340}
@@ -339,7 +357,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/c1da6bcf-0fb2-4c9b-9d5a-6eeb41691172/resources-media-enterprise-times-2x.png'
              />
              <br />
-               <Text fontWeight='bold'
+               <Text
+                  id='e8'
+                fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-354}
@@ -367,7 +387,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/c1da6bcf-0fb2-4c9b-9d5a-6eeb41691172/resources-report-remote-vs-office-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text
+                  id='e5' 
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -397,14 +419,18 @@ const Resources = () => {
              src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/c1da6bcf-0fb2-4c9b-9d5a-6eeb41691172/resources-blog-building-business-resilience-2x.png"
              />
              <br />
-             <Text fontWeight='bold'
+             <Text 
+                id='e7'
+             fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-330}
                 letterSpacing='wide'
                 color='gray'>BLOGPOST</Text>
               
-              <Text fontWeight='bold'
+              <Text
+                id='e9'
+               fontWeight='bold'
                  ml={-14}
                 fontSize='md'
                 letterSpacing='wide'
@@ -426,7 +452,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/e103ef5e-28d9-460e-b87f-dfe209a9fa23/resources-idg-connect-article-2x.png'
              />
              <br />
-               <Text fontWeight='bold'
+               <Text
+                  id='e8'
+                fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-355}
@@ -454,7 +482,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/ca21cd92-525e-4d4c-8837-3c143b2aba1b/resources-marketing-kit-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text 
+                  id='f1'
+               fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -483,7 +513,9 @@ const Resources = () => {
              src= "https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/c1da6bcf-0fb2-4c9b-9d5a-6eeb41691172/resources-media-strategic-hires-2x.png"
              />
              <br />
-             <Text fontWeight='bold'
+             <Text 
+                id='e8'
+             fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='14'
                 ml={-350}
@@ -508,7 +540,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/5fa37051-10e5-4425-ac32-47fbd247da21/resources-quet-quitting-2x.png'
              />
              <br />
-               <Text fontWeight='bold'
+               <Text
+                  id='e5'
+                fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 ml={-350}
@@ -536,7 +570,9 @@ const Resources = () => {
              src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=297,dpr=2/tp/storage/uploads/53eda02b-b285-4f00-ab0e-5e3bd23d1454/resources-dark-matter-digitalisation-world-2x.png'
              />
               <br />
-               <Text fontWeight='bold'
+               <Text
+                  id='e5'
+                fontWeight='bold'
                 textTransform='uppercase'
                 fontSize='sm'
                 letterSpacing='wide'
@@ -574,19 +610,19 @@ const Resources = () => {
       <br />
       <br />
       <br />
-    <Box >
+       <Box >
         <Text as="b" fontSize={{   md: '40px' }}>Work smarter with Wrike's many resources</Text>
       </Box>
       <br />
       <br />
 
 
-      {/* <ImageSlider> */}
-     <Grid className="Grid_7" height="455px">
+     <ImageSlider >  
+     {/* <Grid  className="Grid_7" height="455px">
         <GridItem id="a" className='re1'  height='455px'>
          
           <br />
-          <Text  fontSize="23px" ml="-120px" as="b">Wrike Blog</Text>
+          <Text className='grid7'  fontSize="23px" ml="-120px" as="b">Wrike Blog</Text>
           <Text className='d2' color='gray'>Tips stories, and new approaches 
           <br />to work management,<br />collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
           <br />
@@ -624,8 +660,8 @@ const Resources = () => {
           <Image marginTop="-4px" src='https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=216,dpr=2/tp/storage/uploads/09835002-f546-4f93-ad5e-0b9fd3114ba3/image-example-swipe-cards-3.png'/>
         </GridItem>
         
-     </Grid>
-     {/* </ImageSlider> */}
+     </Grid> */}
+    </ImageSlider>  
     </Box>
      
      {/* <br /><br /><br /><br />  */}
