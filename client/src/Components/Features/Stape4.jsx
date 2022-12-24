@@ -13,7 +13,7 @@ import React from "react";
 const Stape4 = () => {
   return (
     <div>
-      <Box bg="rgb(234,237,245)">
+      <Box bg="rgb(234,237,245)" p={2}>
         <Stack width="90%" margin="auto" p={1}>
           <Heading
             mb={4}
@@ -29,7 +29,7 @@ const Stape4 = () => {
             <Box
               // border="1px solid red"
               // width="28%"
-              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "40%" }}
               // height="300px"
               margin="auto"
               p={5}
@@ -75,7 +75,7 @@ const Stape4 = () => {
             <Box
               // border="1px solid red"
 
-              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "40%" }}
               textAlign="start"
               margin="auto"
               p={5}
@@ -117,7 +117,7 @@ const Stape4 = () => {
             </Box>
 
             <Box
-              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "40%" }}
               margin="auto"
               p={5}
               borderRadius="15px"
@@ -224,8 +224,8 @@ const Stape4 = () => {
           size="lg"
           colorScheme="green"
           mt="24px"
-          marginBottom="5%"
-          marginTop="5%"
+          marginBottom="2rem"
+          marginTop="2rem"
         >
           Get Started
         </Button>

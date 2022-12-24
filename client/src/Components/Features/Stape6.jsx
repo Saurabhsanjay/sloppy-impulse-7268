@@ -1,13 +1,5 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Stape6 = () => {
@@ -15,32 +7,30 @@ const Stape6 = () => {
     <div>
       <Box bg="rgb(235,237,245)">
         <Stack
+          // border="1px solid red"
+          maxW="55rem"
+          margin="auto"
           spacing={8}
-          // border="2px solid red"
           textAlign="center"
           alignItems="center"
+          p={1}
         >
-          <Text
-            fontSize="40px"
-            w="60%"
-            color="black"
-            fontWeight="bold"
-            marginTop="5%"
-          >
+          <Heading mb={4} color="black" fontWeight="bold" marginTop="5%">
+            {" "}
             Explore more customizable features
-          </Text>
-          <Text fontSize="20px" w="55%" color="black" textAlign="left">
+          </Heading>
+          <Text fontSize="xl" color="black">
             Work your way with Wrike’s powerful work management platform. Our
             versatile software has a wide range of features you can tailor to
             your team.
           </Text>
         </Stack>
-        <Stack width="80%" margin="auto" marginTop="5%">
-          <Flex gap="20px">
+        <Stack width="90%" margin="auto" marginTop="5%">
+          <Flex gap="15px" direction={["column", "column", "row", "row"]}>
             <Box
               // border="1px solid red"
-              width="30%"
-              height="300px"
+              width={{ base: "90%", sm: "90%", md: "35%", lg: "35%" }}
+              // height="300px"
               margin="auto"
               p={5}
               borderRadius="15px"
@@ -69,13 +59,12 @@ const Stape6 = () => {
               </Text>
               <Button
                 rightIcon={<ArrowForwardIcon />}
-                colorScheme="teal"
                 variant="link"
-                lineHeight="20px"
-                fontSize="20px"
-                fontWeight="600"
-                marginTop="10%"
-                marginRight="70px"
+                marginTop="5%"
+                marginBottom="1rem"
+                size="lg"
+                colorScheme="teal"
+                mt="24px"
               >
                 Read more
               </Button>
@@ -83,8 +72,8 @@ const Stape6 = () => {
 
             <Box
               // border="1px solid red"
-              width="30%"
-              height="300px"
+              width={{ base: "90%", sm: "90%", md: "35%", lg: "35%" }}
+              // height="300px"
               margin="auto"
               p={5}
               borderRadius="15px"
@@ -118,13 +107,12 @@ const Stape6 = () => {
               </Text>
               <Button
                 rightIcon={<ArrowForwardIcon />}
-                colorScheme="teal"
                 variant="link"
-                lineHeight="20px"
-                fontSize="20px"
-                fontWeight="600"
-                marginTop="10%"
-                marginRight="70px"
+                marginTop="5%"
+                marginBottom="1rem"
+                size="lg"
+                colorScheme="teal"
+                mt="24px"
               >
                 Read more
               </Button>
@@ -132,8 +120,8 @@ const Stape6 = () => {
 
             <Box
               // border="1px solid red"
-              width="30%"
-              height="300px"
+              width={{ base: "90%", sm: "90%", md: "35%", lg: "35%" }}
+              // height="300px"
               margin="auto"
               p={5}
               borderRadius="15px"
@@ -167,13 +155,14 @@ const Stape6 = () => {
               </Text>
               <Button
                 rightIcon={<ArrowForwardIcon />}
-                colorScheme="teal"
                 variant="link"
-                lineHeight="20px"
-                fontSize="20px"
-                fontWeight="600"
-                marginTop="10%"
-                marginRight="70px"
+                marginTop="5%"
+                marginBottom="1rem"
+                size="lg"
+                colorScheme="teal"
+                mt="24px"
+                // border='1px solid red'
+
               >
                 Read more
               </Button>
@@ -182,14 +171,12 @@ const Stape6 = () => {
         </Stack>
         <Button
           rightIcon={<ArrowForwardIcon />}
-          colorScheme="teal"
           variant="link"
-          lineHeight="20px"
-          fontSize="20px"
-          fontWeight="600"
-          marginTop="3%"
-          marginRight="70px"
-          marginBottom="5%"
+          marginTop="5%"
+          marginBottom="3rem"
+          size="lg"
+          colorScheme="teal"
+          mt="24px"
         >
           See all features
         </Button>

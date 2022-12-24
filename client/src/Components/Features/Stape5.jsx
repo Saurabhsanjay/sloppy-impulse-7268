@@ -5,21 +5,29 @@ const Stape5 = () => {
   return (
     <>
       <Box bg="rgb(255,255,255)">
-        <Heading
-          fontSize="44px"
-          lineHeight="60px"
-          fontWeight="700"
-          textAlign="center"
-          marginTop="5%"
+        <Stack width="90%" margin="auto" p={1}>
+          <Heading
+            mb={4}
+            fontSize="30px"
+            color="black"
+            fontWeight="bold"
+            marginTop="5%"
+            marginBottom="5%"
+          >
+            {" "}
+            Try custom item types with these templates{" "}
+          </Heading>
+        </Stack>
+        <Stack
+          width="90%"
+          margin="auto"
           marginBottom="5%"
+          // border="1px solid red"
         >
-          Try custom item types with these templates
-        </Heading>
-        <Stack width="90%" margin="auto" marginBottom="5%">
-          <Flex gap="20px">
+          <Flex gap="15px" direction={["column", "column", "row", "row"]}>
             <Box
               // border="1px solid red"
-              width="35%"
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
               height="400px"
               margin="auto"
               p={5}
@@ -59,7 +67,7 @@ const Stape5 = () => {
 
             <Box
               // border="1px solid red"
-              width="35%"
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
               height="400px"
               margin="auto"
               p={5}
@@ -99,7 +107,7 @@ const Stape5 = () => {
 
             <Box
               // border="1px solid red"
-              width="35%"
+              width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}
               height="400px"
               margin="auto"
               p={5}

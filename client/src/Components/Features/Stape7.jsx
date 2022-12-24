@@ -12,42 +12,50 @@ import React from "react";
 const Stape7 = () => {
   return (
     <div>
-      <Box bg="rgb(23,31,56)" height="400px">
+      <Box bg="rgb(23,31,56)" p={1}>
         <Flex margin="auto">
-          <Box width="40%" height="400px">
+          <Box width="40%" marginTop={15}>
             <Image
+              display={{
+                base: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+              }}
               width="100%"
               src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=488,dpr=1/tp/static/assets/img/raster/dark/1.png?v2"
             ></Image>
           </Box>
-          <Box width="100%">
-            <Heading
-              fontSize="40px"
-              fontWeight="600"
-              marginTop="8%"
-              marginBottom="2%"
-              color="white"
+          <Box width="100%" w="100%" p={1} marginBottom={10} boxSize="large">
+            <Stack
+              // border="1px solid red"
+              maxW="55rem"
+              margin="auto"
+              spacing={8}
+              textAlign="center"
+              alignItems="center"
             >
-              Why wait? Try Wrike today for free
-            </Heading>
-
-            <Text color="white" fontSize="20px" marginTop="5%">
-              Explore custom item types and Wrike’s other innovative features
-              with a free two-week trial — no credit card required.
-            </Text>
-            <Button
-              colorScheme="green"
-              fontSize="2xl"
-              width="20%"
-              height="60px"
-              //   marginBottom="5%"
-              marginTop="7%"
-            >
-              Get Started
-            </Button>
+              <Heading mb={4} color="white" fontWeight="bold" marginTop="5%">
+                {" "}
+                Why wait? Try Wrike today for free
+              </Heading>
+              <Text fontSize="xl" color="white">
+                Explore custom item types and Wrike’s other innovative features
+                with a free two-week trial — no credit card required.
+              </Text>
+              <Button size="lg" colorScheme="green" mt="24px">
+                Get Started
+              </Button>
+            </Stack>
           </Box>
-          <Box width="40%" height="400px">
+          <Box width="40%" marginTop={20}>
             <Image
+              display={{
+                base: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+              }}
               boxSize="100%"
               src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=488,dpr=1/tp/static/assets/img/raster/dark/2.png?v2"
             ></Image>
