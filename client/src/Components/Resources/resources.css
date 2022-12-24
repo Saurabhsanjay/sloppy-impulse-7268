@@ -25,10 +25,11 @@
 .d2{
     text-align: left;
     margin-left: 30px;
+   
  }
-.d2:hover{
+/* .d2:hover{
   color: white;
- }
+ } */
 .d3{
     text-align: left;
  }
@@ -114,22 +115,24 @@
 
 /*****************----Tab Screen *******************/
 
- @media (max-width: 600px) {
+ @media (max-width: 600px ) {
   .Grid_1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 350px;
+    /* border: 1px solid red; */
 
   }
-   #e1{
-    margin-left:-20px;
-    font-size: 35px;
-    
-   }
-   #e2{
-    margin-left: -264px;
-   }
-   #e3{
+  #t1{
+    height: auto;
+  }
+  .inp{
+    width: 80%;
+    border: 1px solid red;
+  }
+  
+  
+  #e3{
     margin-left: -255px;
    }
    #e4{

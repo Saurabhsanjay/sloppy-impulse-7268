@@ -42,7 +42,7 @@ import { Box,Text,Stack,Button,Grid, SimpleGrid ,Input, Image, GridItem} from '@
        <div>
           
          <Slider {...settings}>
-           <div>
+           <div bgColor="">
              <h3><Text id="g1" fontSize="23px" ml="-150px" as="b">Wrike Blog</Text>
           <Text className='d2' color='gray'>Tips stories, and new approaches 
           <br />to work management,<br />collaboration, productivity, and <br /> more. Gain insights from highly <br /> effective teams and emerging <br /> work trends</Text>
