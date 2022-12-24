@@ -1,4 +1,4 @@
-import { Box,Text,Stack,Button,Grid, SimpleGrid ,Input, Image, GridItem} from '@chakra-ui/react'
+import { Box,Text,Stack,Button,Grid,Heading, SimpleGrid ,Input, Image, GridItem} from '@chakra-ui/react'
 import React from 'react'
 import "./resources.css"
 import ImageSlider from '../Resources/ImageSlider'
@@ -9,8 +9,21 @@ const Resources = () => {
 
   return (
     <>
-     
- <Box marginTop="20px"><Text id="e1"   as="b" ml="-67%"   fontSize={{ base: '26px', md: '40px', lg: '45px' }}>Resources Library</Text> </Box>
+     <Box ><Stack
+          maxW="55rem"
+        
+          margin="auto"
+          spacing={8}
+          textAlign="center"
+          alignItems="center"
+        >
+          <Heading   fontSize="37px" mb={4} color="black" fontWeight="bold" marginTop="5%">
+            {" "}
+            Resources Library
+          </Heading>
+          
+        </Stack></Box>
+ {/* <Box marginTop="20px"><Text id="e1"  className="z1"  as="b" ml="-67%"   fontSize={{ base: '26px', md: '40px', lg: '45px' }}>Resources Library</Text> </Box> */}
       <br />
       <br />{/*------------------------- First section---------------------------------------- */}
 
@@ -24,7 +37,7 @@ const Resources = () => {
              
              <br />
              <Text
-             id='e2'
+                id='e2'
                className='e1'
                fontWeight='bold'
                 textTransform='uppercase'
@@ -133,16 +146,15 @@ const Resources = () => {
       </Grid>
       
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br />
-      <br /> 
+      <br /><br /> 
 
       {/*----------------------------- Second section -------------------------------------------- */}
          
 
          {/* ----------------------First section------------------------------------------------- */}
 
-
-      <Box  marginTop="-50px"  ml={10} mr="750px"  >
+         {/* marginTop="-50px"  ml={10} mr="750px"  */}
+      <Box marginLeft="40px" width={{ base: "90%", sm: "90%", md: "40%", lg: "30%" }}>
          <Input id='f2' placeholder='Search' height="60px" size='lg' />
       </Box>
        <br />
@@ -617,7 +629,7 @@ const Resources = () => {
       <br />
 
 
-     <ImageSlider >  
+     <ImageSlider id="t1">  
      {/* <Grid  className="Grid_7" height="455px">
         <GridItem id="a" className='re1'  height='455px'>
          
